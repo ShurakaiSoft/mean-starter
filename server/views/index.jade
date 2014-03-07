@@ -1,0 +1,20 @@
+doctype html
+html(ng-app="angularApp")
+  head
+    meta(charset="utf-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    title mean stack app
+    link(rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css")
+    link(rel="stylesheet" href="/css/styles.css")
+    script(src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.8/angular.min.js")
+    script(src="/js/core.js")
+
+  body(ng-controller="mainController")
+    div.container
+      header.jumbotron.text-center
+        h1 {{ msg }}
+      div
+        button.btn.btn-primary.btn-lg(type="button", ng-click="dbTest()") test Db Connection
+        | &nbsp;
+        | {{ connectMsg }}
+
