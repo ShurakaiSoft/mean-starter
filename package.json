@@ -5,7 +5,7 @@
 	"descriptions": "",
 	"scripts": {
 		"start": "nodemon ./server.js",
-		"test": "mocha --recursive -R spec ./test"
+		"test": "mocha -R spec --recursive ./test"
 	},
 	"main": "./server.js",
 	"repository": {
