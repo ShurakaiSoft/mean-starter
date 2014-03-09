@@ -3,7 +3,7 @@
  */
 
 // dependencies
-var mongoose = require('mongoose'),
+var	mongoose = require('mongoose'),
 	express = require('express'),
 
 
@@ -13,7 +13,7 @@ var mongoose = require('mongoose'),
 
 
 // variables
-var server = express();
+var	server = express();
 
 // setup connection to database
 mongoose.connect(utils.createMongoConnectUrl(config.mongo), function (err, res) {
